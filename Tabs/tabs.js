@@ -23,13 +23,13 @@ tabButtons.forEach(tabBtn=>{
         if(windowWidth>1400){
             if( elemPosition<450){
                 scrollTab.scrollLeft +=-100
-            }else if(elemPosition>950){
+            }else if(elemPosition>900){
                 scrollTab.scrollLeft +=100
             }
         }else if(windowWidth>1000 && windowWidth<1400){
             if( elemPosition<350){
                 scrollTab.scrollLeft +=-80
-            }else if(elemPosition>700){
+            }else if(elemPosition>600){
                 scrollTab.scrollLeft +=80
             }
         }

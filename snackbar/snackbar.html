@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snackbar Component</title>
+    <link rel="stylesheet" href="../css-components/index.css">
+    <script src="https://kit.fontawesome.com/e057b28e7b.js" crossorigin="anonymous"></script>
+    <script src="./snackbar.js" defer></script>
+</head>
+<body>
+    <div class="snackbar-container">
+        <h2>Snackbar Components</h2>
+        <div class="snackbar-wrapper">
+            <!-- baseline -->
+            <div class="snackbar-content" id="baselineSnackbar">
+                <p>Your photo has been archived</p>
+                <button class="btn">Undo</button>
+                <button class="btn-icon-only"><span><i class="fas fa-times"></i></span></button>
+            </div>
+            <div class="snackbar-content snackbar-dark" id="leadingSnackbar">
+                <p>Conversation Moved to Trash</p>
+                <button class="btn">Undo</button>
+                <button class="btn-icon-only btn-icon-light"><span><i class="fas fa-times"></i></span></button>
+            </div>
+            
+            <div class="snackbar-content">
+                <p>Message not sent.</p>
+                <button class="btn btn-primary">Retry</button>
+                <button class="btn-icon-only"><span><i class="fas fa-times"></i></span></button>
+            </div>
+            <div class="snackbar-content snackbar-dark stacked-snackbar" id="stackedSnackbar">
+                <p>This item already has the label "travel". You can add a new label.</p>
+                <div class="stacked-btn-wrapper">
+                    <button class="btn btn-outline">View Message</button>
+                    <button class="btn-icon-only btn-icon-light"><span><i class="fas fa-times"></i></span></button>
+                </div>
+            </div>
+            <div class="snackbar-content">
+                <p>Action undone.</p>
+                <button class="btn-icon-only"><span><i class="fas fa-times"></i></span></button>
+            </div>
+        </div>
+        <button class="btn btn-primary" id="baselineBtn">Baseline</button>
+        <button class="btn btn-primary" id="leadingBtn">Leading</button>
+        <button class="btn btn-primary" id="stackedBtn">Stacked</button>
+    </div>
+    
+</body>
+</html>

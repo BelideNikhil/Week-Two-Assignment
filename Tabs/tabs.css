@@ -1,0 +1,26 @@
+.tab-container{
+    width:50%;
+    margin:1rem auto;  
+    overflow: hidden;
+}
+
+.tab-content{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid;
+}
+.tab-content button{
+    margin-bottom: 0;
+}
+.scroll-tab{
+    justify-content: flex-start;
+    overflow-x: scroll;
+}
+
+/* hiding scrollbars but having scroll */
+.scroll-tab {
+    scrollbar-width: none;  /* Firefox */
+}
+.scroll-tab::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}

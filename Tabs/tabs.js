@@ -33,17 +33,17 @@ tabButtons.forEach(tabBtn=>{
                 scrollTab.scrollLeft +=80
             }
         }
-        else if(windowWidth>650 && windowWidth<1000){
+        else if(windowWidth>600 && windowWidth<1000){
             if( elemPosition<250){
                 scrollTab.scrollLeft +=-120
             }else if(elemPosition>450){
                 scrollTab.scrollLeft +=120
             }
-        }else if(windowWidth<650){
+        }else if(windowWidth<600){
             if( elemPosition<150){
-                scrollTab.scrollLeft +=-60
-            }else if(elemPosition>400){
-                scrollTab.scrollLeft +=60
+                scrollTab.scrollLeft +=-120
+            }else if(elemPosition>250){
+                scrollTab.scrollLeft +=120
             }
         }
         // e.target.scrollIntoView({ inline: "center" })

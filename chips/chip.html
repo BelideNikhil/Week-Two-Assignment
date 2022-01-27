@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chips</title>
+    <link rel="stylesheet" href="../css-components/index.css">
+    <script src="https://kit.fontawesome.com/e057b28e7b.js" crossorigin="anonymous"></script>
+    <script src="./chip.js" defer></script>
+</head>
+<body>
+    <div class="chip-wrapper">
+        <!--  -->
+        <div class="chip-content-wrapper">
+            <p>Filters</p>
+            <div class="chip-item">
+                <button id="delete-chip-btn" class="btn-icon-only btn-icon-sm">
+                    <span><i class="fas fa-times"></i></span>
+                </button>
+                <span class="chip-text">Apple</span>
+            </div>
+            <div class="chip-item">
+                <button id="delete-chip-btn" class="btn-icon-only btn-icon-sm">
+                    <span><i class="fas fa-times"></i></span>
+                </button>
+                <span class="chip-text">23.8-24.0 in</span>
+            </div>
+            <div class="chip-item">
+                <button id="delete-chip-btn" class="btn-icon-only btn-icon-sm">
+                    <span><i class="fas fa-times"></i></span>
+                </button>
+                <span class="chip-text">Low to High</span>
+            </div>
+            <input type="text" class="basic-input chip-input" id="chip-input" placeholder="filter search...">
+        </div>
+    </div>
+    <!-- chip with button -->
+    <div class="chip-wrapper">
+        <div class="chip-content-wrapper">
+            <p>Chip Styles</p>
+            <div class="chip-item">
+                <button id="delete-chip-btn" class="btn-icon-only btn-icon-sm">
+                    <span><i class="fas fa-times"></i></span>
+                </button>
+                <span class="chip-text">Normal Chip</span>
+            </div>
+            <div class="chip-item primary-chip">
+                <button id="delete-chip-btn" class="btn-icon-only btn-icon-sm">
+                    <span><i class="fas fa-times"></i></span>
+                </button>
+                <span class="chip-text">Primary Chip</span>
+            </div>
+            <div class="chip-item outline-chip">
+                <button id="delete-chip-btn" class="btn-icon-only btn-icon-sm">
+                    <span><i class="fas fa-times"></i></span>
+                </button>
+                <span class="chip-text">Outline Chip</span>
+            </div>
+        </div>
+    </div>
+    <div class="chip-wrapper">
+        <div class="chip-content-wrapper">
+            <p>Only Chips</p>
+            <div class="chip-item">
+                <span class="chip-text">Normal Chip</span>
+            </div>
+            <div class="chip-item primary-chip">
+                <span class="chip-text">Primary Chip</span>
+            </div>
+            <div class="chip-item outline-chip">
+                <span class="chip-text">Outline Chip</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

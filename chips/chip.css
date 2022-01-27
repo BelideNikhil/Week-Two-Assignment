@@ -1,0 +1,41 @@
+.chip-wrapper{
+    background-color: var(--clr-light-grey);
+    /* remove width while using it inside an actual project */
+    width:80%;
+    margin:2rem auto;
+    border-radius: 4px;
+    border-bottom: 2px solid;
+}
+
+/* basic default styles */
+.chip-content-wrapper{
+    padding: var(--padding-md);
+}
+.chip-item{
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 4px;
+    margin: var(--margin-sm);
+    padding: var(--padding-sm);
+    font-weight: var(--fw-bold-800);
+}
+
+/* chip input */
+.chip-input{
+    background-color: var(--clr-light-grey);
+    border: none;
+    flex: 1 1 120px;
+}
+.chip-input:focus{
+    outline: none;
+}
+/* chip types */
+.primary-chip{
+    color: white;
+    background-color: var(--clr-forest-green);
+}
+.outline-chip{
+    background-color: white;
+    color: var(--clr-forest-green);
+}

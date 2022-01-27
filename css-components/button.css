@@ -1,0 +1,127 @@
+.btn{
+    display:inline-flex;
+    font-size: 1rem;
+    font-weight: var(--fw-semi-bold);
+    margin:5px;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    color: var(--clr-dark-grey-700);
+    background-color: var(--clr-white);
+}
+.btn .btn-icon{
+    color:currentColor;
+    margin:0 6px;
+}
+/* sizes */
+.btn-size-sm{
+    font-size: 8px;
+    padding: var(--padding-sm);
+}
+
+.btn-size-lg{
+    font-size: 22px;
+    padding: var(--padding-md);
+}
+/*  styles */
+.btn-primary{
+    background-color: var(--clr-forest-green);
+    color: var(--clr-white);
+}
+.btn-primary:hover{
+    background-color: var(--clr-forest-green-dark);
+}
+.btn-secondary:hover{
+    background-color: var(--clr-light-grey);
+}
+/* outlined color */
+.btn-outline{
+    color: var(--clr-forest-green);
+    background-color: var(--clr-white);
+    border: 1px solid currentColor;
+}
+
+
+/* button with text color as primary only*/
+.btn-txt-primary{
+    color: var(--clr-forest-green);
+    background-color: transparent;
+    font-weight: var(--fw-bold-800);
+}
+/* btn txt underline */
+.btn-underline-primary{
+    color: var(--clr-forest-green);
+    border-bottom: 4px solid currentColor;
+    border-radius: 0;
+}
+
+/* button with icon on left */
+.btn-text-icon-primary{
+    box-shadow: var(--box-shadow-light);
+    background-color: var(--clr-forest-green);
+    color: var(--clr-white);
+}
+.btn-text-icon-primary:hover{
+    color: var(--clr-forest-green);
+    background-color: var(--clr-white);
+}
+.btn-text-icon-outline{
+    color: var(--clr-forest-green);
+    background-color: var(--clr-white);
+    border: 1px solid currentColor;
+}
+.btn-text-icon-outline:hover{
+    background-color: var(--clr-forest-green);
+    color: var(--clr-white);
+}
+.btn-text-icon-primary>.btn-icon
+,.btn-text-icon-outline>.btn-icon{
+    margin:0 var(--margin-lg);
+}
+
+
+
+/* label buttons */
+.btn-lbl{
+    display: block;
+    text-align: left;
+    width: 95%;
+}
+.btn-lbl .btn-icon{
+    margin-right: var(--margin-xxl);
+}
+
+
+/* only icon btns */
+.btn-icon-only{
+    border: none;
+    background-color:transparent;
+    margin: 5px;
+    color:currentColor;
+    cursor: pointer;
+}
+.btn-icon-only i {
+    font-size: 18px;
+    width: 28px;
+    line-height: 28px;
+}
+
+.btn-icon-primary i{
+    color: var(--clr-forest-green);
+}
+.btn-icon-light i{
+    color: var(--clr-white);
+}
+/*  icon sizes */
+.btn-icon-sm i{
+    font-size: 12px;
+    width: 12px;
+    line-height: 14px;
+}
+.btn-icon-lg i{
+    font-size: 24px;
+    width: 30px;
+    line-height: 30px;
+}

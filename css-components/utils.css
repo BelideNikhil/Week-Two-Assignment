@@ -1,0 +1,32 @@
+
+
+#hide-content{
+    display: none;
+}
+.hideContent{
+    display: none;
+}
+.dark-bg{
+    background-color: var(--clr-dark-grey-500);
+    color: var(--clr-white);
+}
+
+/* flex related */
+.flex-row{
+    display: flex;
+    align-items: center;
+}
+
+.flx-row-spc-btw{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-clm{
+    display: flex;
+    flex-direction: column;
+}
+/* to prevent body scroll when box is open */
+.body-scroll{
+    overflow: hidden;
+}

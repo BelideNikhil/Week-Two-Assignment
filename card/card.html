@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Component</title>
+    <link rel="stylesheet" href="../css-components/index.css">
+    <script src="https://kit.fontawesome.com/e057b28e7b.js" crossorigin="anonymous"></script>
+    <script src="./card.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown-container">
+            <select name="basic-dropdown" class="basic-dropdown card-dropdown">
+                <option value="basic">Basic Card</option>
+                <option value="title-overlay-img">Title Overlay</option>
+                <option value="title-first">Title First</option>
+                <option value="basic w/buttons">Basic w/only Buttons</option>
+                <option value="basic w/icons">Basic w/only Icons</option>
+                <option value="horizontal-card">Horizontal-card</option>
+            </select>
+        </div>
+        <!-- basic -->
+        <div class="card-wrapper">
+            <div class="card-data-content">
+                <img src="./cycle.jpg" alt="">
+                <div class="card-title">
+                    <h2>Learn Off Road.</h2>
+                    <h4><span class="faded-font">by CI Santosh.</span></h4>
+                </div>
+            </div>
+            <p>Currently we have our own venue at the Learn Offroad Training Grounds near Pali. Spread over 65 acres of hilly terrain, the venue offers various grades of obstacles to offroaders.</p>
+            <div class="action-content flex-row">
+                <div class="action-buttons flex-row">
+                    <button class="btn btn-primary">Read More</button>
+                    <button class="btn btn-outline" >Buy Now</button>
+                </div>
+                <div class="action-icons"> 
+                    <a href="#" class="btn-icon-only btn-icon-primary">
+                        <span><i class="far fa-heart"></i></span>
+                    </a>
+                    <a href="#" class="btn-icon-only btn-icon-primary">
+                        <span><i class="far fa-bookmark"></i></span>
+                    </a>
+                    <a href="#" class="btn-icon-only btn-icon-primary">
+                        <span><i class="fas fa-share-alt"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

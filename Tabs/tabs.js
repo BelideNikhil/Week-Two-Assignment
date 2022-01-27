@@ -21,10 +21,10 @@ tabButtons.forEach(tabBtn=>{
         console.log(elemPosition)
         
         if(windowWidth>1400){
-            if( elemPosition<400){
-                scrollTab.scrollLeft +=-90
-            }else if(elemPosition>900){
-                scrollTab.scrollLeft +=90
+            if( elemPosition<450){
+                scrollTab.scrollLeft +=-100
+            }else if(elemPosition>950){
+                scrollTab.scrollLeft +=100
             }
         }else if(windowWidth>1000 && windowWidth<1400){
             if( elemPosition<350){

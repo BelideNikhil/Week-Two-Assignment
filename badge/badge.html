@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>badge</title>
+    <link rel="stylesheet" href="../css-components/index.css">
+    <script src="https://kit.fontawesome.com/e057b28e7b.js" crossorigin="anonymous"></script>
+    <script src="./badge.js" defer></script>
+</head>
+<body>
+    <div class="badge-container">
+        <h2>Badges and types</h2>
+        <div class="bdg-wrapper">
+            <div class="bdg bdg-on-text">
+                <span class="bdg-text">text with right badge</span>
+                <span class="bdg-icon bdg-right">23</span>
+            </div>
+            <div class="bdg">
+                <button class="btn btn-primary">Button with left badge</button>
+                <span class="bdg-icon bdg-left">15</span>
+            </div>
+            <div class="bdg">
+                <a class="btn-icon-only" href="#"><span><i class="fas fa-shopping-cart"></i></span></a>
+                <span class="bdg-icon bdg-right bdg-clr-red">*</span>
+            </div>
+            <div class="bdg">
+                <button class="btn btn-label-primary"><span class="btn-icon"><i class="fas fa-phone-alt"></i></span>Missed Calls</button>
+                <span class="bdg-icon bdg-left bdg-clr-green">3</span>
+            </div>
+            <div class="bdg">
+                <button class="btn btn-outline">Right</button>
+                <span class="bdg-icon bdg-right">18</span>
+            </div>
+
+            <div class="bdg">
+                <button class="btn-icon-only btn-icon-primary"><span class="btn-icon"><i class="fas fa-home"></i></span></button>
+                <span class="bdg-icon bdg-right">18</span>
+            </div>
+            <div class="bdg">
+                <button class="btn" id="hideBadgeBtn">Show/Hide</button>
+                <span class="bdg-icon bdg-right bdg-clr-red" id="myNotification" data-shownotification=true>9</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

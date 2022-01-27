@@ -1,4 +1,6 @@
 const tabButtons=document.querySelectorAll(".btn")
+const scrollTab = document.querySelector(".scroll-tab");
+
 
 tabButtons.forEach(tabBtn=>{
     tabBtn.addEventListener("click",(e)=>{
@@ -8,10 +10,42 @@ tabButtons.forEach(tabBtn=>{
     })
 })
 
-// adding scroll-x when mouse wheel is closed
-const scrollTab = document.querySelector(".scroll-tab");
-scrollTab.addEventListener("wheel", (e) => {
-    e.preventDefault();
-    scrollTab.scrollLeft += e.deltaY < 0 ? -30 : 30
 
-});
+tabButtons.forEach(tabBtn=>{
+    tabBtn.addEventListener("click",(e)=>{
+        let windowWidth=window.innerWidth || document.documentElement.clientWidth
+        console.log(windowWidth)
+
+        tabBtn.scrollIntoView()
+        let {x:elemPosition}=tabBtn.getBoundingClientRect();
+        console.log(elemPosition)
+        
+        if(windowWidth>1400){
+            if( elemPosition<400){
+                scrollTab.scrollLeft +=-90
+            }else if(elemPosition>900){
+                scrollTab.scrollLeft +=90
+            }
+        }else if(windowWidth>1000 && windowWidth<1400){
+            if( elemPosition<350){
+                scrollTab.scrollLeft +=-80
+            }else if(elemPosition>700){
+                scrollTab.scrollLeft +=80
+            }
+        }
+        else if(windowWidth>650 && windowWidth<1000){
+            if( elemPosition<250){
+                scrollTab.scrollLeft +=-120
+            }else if(elemPosition>450){
+                scrollTab.scrollLeft +=120
+            }
+        }else if(windowWidth<650){
+            if( elemPosition<150){
+                scrollTab.scrollLeft +=-60
+            }else if(elemPosition>400){
+                scrollTab.scrollLeft +=60
+            }
+        }
+        // e.target.scrollIntoView({ inline: "center" })
+    })
+})

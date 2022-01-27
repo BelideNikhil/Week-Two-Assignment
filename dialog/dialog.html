@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Component</title>
+    <link rel="stylesheet" href="../css-components/index.css">
+    <script src="https://kit.fontawesome.com/e057b28e7b.js" crossorigin="anonymous"></script>
+    <script src="./dialog.js" defer></script>
+</head>
+<body class="">
+    <h2>Dialog Boxes</h2>
+    <button class="btn btn-primary" id="simpleDlgBtn">Simple Dialog</button>
+    <button class="btn" id="discordDlgBtn">Discord Event</button>
+    <button class="btn btn-outline" id="confirmationBtn">Set Ringtone</button>
+
+    <!-- simple dialog -->
+    <div class="dialog-box-container" id="hide-content" data-simpledialog=false>
+        <div class="dialog-box basic-dialog">
+            <div class="dialog-content">
+                <p>Discard draft?</p>
+            </div>
+            <div class="dialog-actions">
+                <button class="btn btn-primary-txt closeDialogBtn">Cancel</button>
+                <button class="btn btn-primary-txt">Discard</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- discord dialog -->
+    <div class="dialog-box-container" id="hide-content" data-eventdialog=false>
+        <div class="dialog-box  event-dialog dialog-dark">
+            <div class="dialog-header flx-row-spc-btw">
+                <div><span><i class="fas fa-calendar-day"></i></span> 1 Event</div>
+                <button class="btn-icon-only closeDialogBtn"><i class="fas fa-times" ></i></button>
+            </div>
+            <div class="dialog-content">
+                <button class="btn-icon-only btn-icon-primary"><span><i class="fas fa-calendar-day"></i></span> Tomorrow at 18:30, Live on Zoom</button>
+                <h2>UX design for UI developers w/Vikram</h2>
+                <p>The surprise session that we all were waiting for is here.</p>
+                <p>We meet this Republic day and learn insights around UX design</p>
+            </div>
+            <div class="dialog-actions">
+                <button class="btn btn-text-icon-primary"><span class="btn-icon"><i class="fas fa-link"></i></span>Share</button>
+                <button class="btn btn-text-icon-primary"><span class="btn-icon"><i class="fas fa-bell"></i></span>Interested</button>
+            </div>
+        </div>
+    </div>
+    <div class="dialog-box-container" id="hide-content" data-confdialog=false>
+        <div class="dialog-box">
+            <div class="dialog-header">
+                <h2>Phone Ringtone</h2>
+            </div>
+            <div class="dialog-content confir-dialog">
+                    <label>
+                        <input type="radio" name="ringTone" id="">
+                        <span>Reflection (Default)</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="ringTone" id="">
+                        <span>Apex</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="ringTone" id="">
+                        <span>Beacon</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="ringTone" id="">
+                        <span>Chimes</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="ringTone" id="">
+                        <span>Circuit</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="ringTone" id="">
+                        <span>Constellation</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="ringTone" id="">
+                        <span>Cosmic</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="ringTone" id="">
+                        <span>Hillside</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="ringTone" id="">
+                        <span>Illuminate</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="ringTone" id="">
+                        <span>Opening</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="ringTone" id="">
+                        <span>Radar</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="ringTone" id="">
+                        <span>Sencha</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="ringTone" id="">
+                        <span>Signal</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="ringTone" id="">
+                        <span>Silk</span>
+                    </label>
+            </div>
+            <hr>
+            <div class="dialog-actions">
+                <button class="btn btn-primary-txt closeDialogBtn">Cancel</button>
+                <button class="btn btn-primary-txt">OK</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

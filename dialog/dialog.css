@@ -1,0 +1,64 @@
+body{
+    min-height: 100vh;
+}
+.dialog-box-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.562);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-box{
+    width:max-content;
+    height: max-content;
+    background-color: var(--clr-white);
+    border-radius: 4px;
+    box-shadow: var(--box-shadow-heavy);
+    padding: var(--padding-lg);
+    margin: var(--margin-md);
+}
+.dialog-box>*,.dialog-content>*{
+    margin: var(--margin-sm);
+}
+.dialog-actions{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+/* dark-dialouge box */
+.dialog-box.dialog-dark{
+    background-color: var(--clr-dark-grey-500);
+    color: var(--clr-light-grey);
+}
+.dialog-dark .dialog-header{
+    background-color: var(--clr-dark-grey-700);
+    padding: var(--padding-md);
+}
+
+
+/*  */
+.dialog-content.confir-dialog{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 15rem;
+    width: 18rem;
+    overflow-y: scroll;
+}
+.confir-dialog label{
+    font-weight: 900;
+    padding: var(--padding-md);
+}
+.confir-dialog input{
+    accent-color: var(--clr-forest-green);
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
